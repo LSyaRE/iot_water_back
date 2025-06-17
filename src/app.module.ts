@@ -8,7 +8,6 @@ import { DataSource } from 'typeorm';
 import { DatabaseModule } from '@config/database';
 import { APP_GUARD } from '@nestjs/core';
 import { AtGuard } from '@shared/guards';
-import { MetricsHubModule } from './modules/metrics-hub/metrics-hub.module';
 
 @Module({
   imports: [
@@ -18,7 +17,6 @@ import { MetricsHubModule } from './modules/metrics-hub/metrics-hub.module';
     AuthModule,
     CoreModule,
     DatabaseModule,
-    MetricsHubModule,
   ],
   controllers: [AppController],
   providers: [
