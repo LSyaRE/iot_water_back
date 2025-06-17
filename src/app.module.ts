@@ -11,10 +11,8 @@ import { AtGuard } from '@shared/guards';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [
-  MongooseModule.forRoot('mongodb://admin:admin123@localhost:27017/iot_water', {
-      authSource: 'admin', // <- importante si usas auth
-    }),    ConfigModule.forRoot({
+  imports: [  
+    ConfigModule.forRoot({
       isGlobal: true,
     }),
     AuthModule,
