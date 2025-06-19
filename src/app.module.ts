@@ -9,6 +9,7 @@ import { DatabaseModule } from '@config/database';
 import { APP_GUARD } from '@nestjs/core';
 import { AtGuard } from '@shared/guards';
 import { MongooseModule } from '@nestjs/mongoose';
+import { LorawanModule } from './modules/lorawan/lorawan.module';
 
 @Module({
   imports: [  
@@ -18,6 +19,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     AuthModule,
     CoreModule,
     DatabaseModule,
+    LorawanModule
   ],
   controllers: [AppController],
   providers: [
