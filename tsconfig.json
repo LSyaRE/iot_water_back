@@ -20,6 +20,7 @@
     "paths": {
       "@auth/*": ["./src/modules/auth/*"],
       "@core/*": ["./src/modules/core/*"],
+      "@lorawan/*": ["./src/modules/lorawan/*"],
       "@config/*": ["./src/config/*"],
       "@shared/*": ["./src/shared/*"]
     }

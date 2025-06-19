@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { DatosConsumoAgua, DatosConsumoAguaDocument } from '../consumption/schemas/consumption.schema';
 import { CreateDatosConsumoAguaDto } from '../consumption/dtos/create-consumption.dto';
-import { v4 as uuidv4 } from 'uuid'; // For generating UUIDs
+import { v4 as uuidv4 } from 'uuid'; 
 
 @Injectable()
 export class DatosConsumoAguaService {
